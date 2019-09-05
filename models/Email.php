@@ -18,12 +18,12 @@ class Email
         // $this->mail->SMTPDebug = 2;
         $this->mail->isSMTP();
         $this->mail->Host = 'email-ssl.com.br';
-        $this->mail->Username = 'naoresponder@laboratoriounilab.com.br';
-        $this->mail->Password = 'respostaunilab';
+        $this->mail->Username = 'email do sistema';
+        $this->mail->Password = 'senha do sistema';
         $this->mail->SMTPAuth = true;
         $this->mail->Port = 465;
         $this->mail->SMTPSecure = 'ssl';
-        $this->mail->setFrom('naoresponder@laboratoriounilab.com.br', 'postmaster');
+        $this->mail->setFrom('email do sistema', 'postmaster');
         $this->mail->isHTML(true);
     }
 
