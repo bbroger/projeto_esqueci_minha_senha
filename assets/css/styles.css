@@ -1,0 +1,64 @@
+html, body {
+    height: 100%;
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.panel {
+    width: 100%;
+    max-width: 600px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 3px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.panel-header h1 {
+    font-size: 32px;
+}
+
+#form-login {
+    overflow: hidden;
+    animation: slideIn 1s 1;
+}
+
+#form-login.active {
+    display: none;
+}
+
+#forgot-password {
+    display: none;
+    overflow: hidden;
+}
+
+#forgot-password.active{
+    display: block;
+    animation: slideIn 1s 1;
+}
+
+@keyframes slideIn{
+    0%{
+        opacity: 0;
+        margin-left: 30px;
+    }
+    100% {
+        opacity: 1;
+        margin-left: 0;
+    }
+}
